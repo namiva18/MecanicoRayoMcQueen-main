@@ -1,0 +1,51 @@
+{% load static %}
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="{% static 'Images/Rayo Makween Logo.png'%}" alt="Descripción de la imagen" class="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'index' %}">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'quiensomos' %}">Nosotros</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Servicios</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{% url 'electro' %}">Electronica Automotriz</a></li>
+              <li><a class="dropdown-item" href="{% url 'caja_cambio' %}">Cajas de Cambio</a></li>
+              <li><a class="dropdown-item" href="{% url 'suspension' %}">Suspension y Direccion</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Nuestros Trabajos</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{% url 'trab_real' %}">Trabajos Realizados</a></li>
+            <li><a class="dropdown-item" href="{% url 'lista_publicaciones' %}">Publicaciones</a></li>
+            <li><a class="dropdown-item" href="{% url 'nueva_publicacion' %}">Nueva publicacion</a></li>
+          </ul>
+        </li>
+      </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'trab_real' %}">Trabajos Realizados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contacto' %}">Contactanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'login' %}">Ingresa con tu cuenta</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Buscar">
+          <button class="btn btn-primary" type="button">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>

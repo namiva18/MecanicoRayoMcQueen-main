@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Mecánico Rayo Makween</title>
+    <link rel="stylesheet" href="{% static 'CSS/styles.css'%}">
+    <link rel="icon" href="{% static 'Images/logo_icono.png'%}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    
+    </head>
+<body>
+
+    <!--Navbar-->
+
+    <header>
+      {% include 'tallerMecanico/natbar.html' %}
+    </header>
+    
+ <!---TRABAJOS REALIZADOS--->   
+
+    <div class="container mt-4">
+        <h4>Trabajos realizados por nuestros mecanicos</h4>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="{% static 'Images/scaner_mec.jpg'%}" alt="Imagen 1" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Scanner automotriz</h5>
+              <p class="card-text">sofisticadas herramientas que se utiliza para diagnostico de fallas electrinicas  </p>
+              <p class="card-text>">Contamos con Scanner para todos los modelos y marcas de vehiculos Livianos y de Carga </p>
+              <button type="button" class="mt-5 mx-5 btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">Elementos Utilizados</button>
+                    <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
+                      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitle">Repuestos utilizados</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <ul>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="{% static 'Images/caja_cambio_mec.jpg'%}" alt="Imagen 2" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Caja de cambio </h5>
+              <p class="card-text">Ruido al meter una marcha</p>
+              <p class="card-text">  Conviene revisar el desgaste de los sincronizadores y el estado de los anillos</p>
+              <button type="button" class="mt-5 mx-5 btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">Elementos Utilizados</button>
+                    <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
+                      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitle">Repuestos utilizados</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <ul>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+              <img src="{% static 'Images/susp_mec.jpg'%}" alt="Imagen 3" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Suspencion</h5>
+                <p class="card-text">El coche rebota en exceso</p>
+                <p class="card-text">En función de tu coche y su carga habitual, podría haber un desgaste más acusado en el tren delantero o el tren trasero. Es el momento de pasar por el taller y solicitar que te cambien los amortiguadores</p>
+                <button type="button" class="mt-5 mx-5 btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">Elementos Utilizados</button>
+                    <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
+                      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitle">Repuestos utilizados</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <ul>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{% static 'Images/barra_est_mec.jpg'%}" alt="Imagen 4" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Tren Delantero y trasero</h5>
+                    <p class="card-text">desgastes en las barras estabilizadoras</p>
+                    <p class="card-text">Se trata de una barra cilíndrica de metal con un componente elástico que une las dos ruedas de un mismo eje, generalmente el delantero, y las conecta a la carrocería para aumentar la estabilidad del automóvil y evitar que uno de los dos lados se hunda.</p>
+                    <button type="button" class="mt-5 mx-5 btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">Elementos Utilizados</button>
+                    <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
+                      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitle">Repuestos utilizados</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <ul>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{% static 'Images/alin_mec.jpg'%}" alt="Imagen 5" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Alineacion y Balanceo</h5>
+                    <p class="card-text">garantizar la vida util de la suspencion y llantas</p>
+                    <p class="card-text">cuando los vehículos requieren de alineación, tienden a jalar hacia la izquierda o hacia derecha en el momento en que se suelta el volante.</p>
+                    <button type="button" class="mt-5 mx-5 btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">Elementos Utilizados</button>
+                    <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
+                      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitle">Repuestos utilizados</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <ul>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{% static 'Images/motor_mec.jpg'%}" alt="Imagen 6" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Ajuste de Motor</h5>
+                    <p class="card-text">Perdida de potencia</p>
+                    <p class="card-text"> cuando no se lubrica de forma correcta las piezas del motor, esto se traduce en cambios de anillos, metales, pistones, empaquetadura, entre otras piezas</p>
+                    <button type="button" class="mt-5 mx-5 btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">Elementos Utilizados</button>
+                    <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
+                      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitle">Repuestos utilizados</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <ul>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{% static 'Images/sis_fren_mec.jpg'%}" alt="Imagen 7" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Sistema de Frenos</h5>
+                    <p class="card-text">Sonido al pisar el freno</p>
+                    <p class="card-text">Este mecanismo ofrece protección, ya que permite detener un vehículo en movimiento.</p>
+                    <button type="button" class="mt-5 mx-5 btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">Elementos Utilizados</button>
+                    <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
+                      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitle">Repuestos utilizados</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <ul>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{% static 'Images/preven_mec.jpg'%}" alt="Imagen 8" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Mantencion Preventiva</h5>
+                    <p class="card-text">Funcionamiento correcto del vehiculo</p>
+                    <p class="card-text">Rendimiento y consumo se ven favorecidos, Una mantención optima, mejora la combustión interna, El motor no sufre daños por lubricación </p>
+                    <button type="button" class="mt-5 mx-5 btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">Elementos Utilizados</button>
+                    <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
+                      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitle">Repuestos utilizados</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <ul>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{% static 'Images/offroad_jpg.jpg'%}" alt="Imagen 9" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Kit Off Road</h5>
+                    <p class="card-text">Equipamiento Off Road Para Camionetas Y 4x4</p>
+                    <p class="card-text">Estos levantarán su camioneta que está dedicada para el off road, lo que te dará más altura libre al suelo así como una mejor vista hacia adelante. </p>
+                    <button type="button" class="mt-5 mx-5 btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">Elementos Utilizados</button>
+                    <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
+                      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitle">Repuestos utilizados</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <ul>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
